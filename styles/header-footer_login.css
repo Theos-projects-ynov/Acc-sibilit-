@@ -41,7 +41,7 @@ footer {
     width: 100%;
     bottom: 0;
 
-    height: 50px;
+    height: 75px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,4 +50,11 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     margin-top: auto;
+}
+
+footer .footerLink {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
 }
