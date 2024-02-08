@@ -7,7 +7,7 @@
     <meta name="description" content="Page de login pour Eateaze, accede a ton compte pour continuer">
     <meta name="keywords" content="Eateaze, Login utilisateur , acceder pour les membres">
     <meta name="author" content="Theo Stoffelbach - Perplexity">
-    <meta name="theme-color" content="#f2f2f2"/>
+    <meta name="theme-color" content="#f3f3f3"/>
 
     <link rel="stylesheet" href="styles/login.css" defer>
     <link rel="stylesheet" href="styles/header-footer_login.css" defer>
@@ -23,53 +23,55 @@
         >
             <img src="img/logoLow.webp" width="75" height="80" alt="Logo de Eateaze" id="headerLogo">
         </a>
-    
+
         <nav id="header-nav">
-            <a href="http://127.0.0.1:5500/Login.html" id="active" tabindex="-1" >Login</a>
-            <a href="http://127.0.0.1:5500/blog.html" class="inactive" aria-hidden="false" tabindex="0">Blog</a>
-            <a href="http://127.0.0.1:5500/article.html" class="inactive" aria-hidden="false" tabindex="0">Aticle</a>
+            <a href="http://127.0.0.1:5500/Login.html" class="inactive" aria-hidden="false" tabindex="0"> <h3>Login</h3> </a>
+            <a href="http://127.0.0.1:5500/blog.html" class="inactive" aria-hidden="false" tabindex="0"> <h3>Blog</h3> </a>
+            <a href="http://127.0.0.1:5500/article.html" id="active"  aria-hidden="true" tabindex="-1" > <h3>Aticle</h3> </a>
         </nav>
     </header>
-<main>
-    <h1>Login</h1>
-    <section>
-        <form action="blog.html" id="login" method="post">
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" 
-                aria-placeholder="email"
-                aria-required="true"
-                aria-label="Champ de texte pour email"  
 
-                placeholder="email@gmail.com" 
-                id="email" 
-                name="email"
-                autocomplete="email"
-                autofocus required>
-            </div>
-            <div class="form-group">
-                <label for="password">Mot de passe :</label>
-                <input type="password" 
-                aria-placeholder="mot de passe" 
-                aria-required="true" 
-                aria-label="Champ de texte, pour le mot de passe"  
+    <main>
+        <h1>connexion</h1>
+        <section>
+            <form action="blog.html" id="login" method="post">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" 
+                    aria-placeholder="email"
+                    aria-required="true"
+                    aria-label="Champ de texte pour email"  
 
-                placeholder="mot de passe" 
-                id="password" 
-                name="password" 
-                autocomplete="current-password" 
-                required>
-            </div>
-            <div class="form-group">
-                <input type="submit" aria-label="Envoie les données de connexion" value="Login" role="button">
-            </div>
-        </form>
-    </section>
-</main>
-<footer>
-    <a class="footerLink" href="https://facebook.com" tabindex="-1" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">Facebook</a>
-    <a class="footerLink" href="https://instagram.com" tabindex="-1" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram">Insta</a>
-</footer>
+                    placeholder="email@gmail.com" 
+                    id="email" 
+                    name="email"
+                    autocomplete="email"
+                    autofocus required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" 
+                    aria-placeholder="mot de passe" 
+                    aria-required="true" 
+                    aria-label="Champ de texte, pour le mot de passe"  
+
+                    placeholder="mot de passe" 
+                    id="password" 
+                    name="password" 
+                    autocomplete="current-password" 
+                    required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" aria-label="Envoie les données de connexion" value="Se connecter" role="button">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footerLink" href="https://facebook.com" tabindex="-1" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"> <h3>Facebook</h3> </a>
+        <a class="footerLink" href="https://instagram.com" tabindex="-1" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"> <h3>Insta</h3> </a>
+    </footer>
 
 </body>
 </html>

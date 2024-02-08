@@ -1,69 +1,96 @@
-* {
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    min-width: 0;
 }
 
-body {
-    min-height: 100vh;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-html body main {
-    width: auto;
-    width: 80em;
-    margin: 2em auto;
-    padding: 15px;
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 2em;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-section {
-    width: 80rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-
-    padding: 25px;
-    margin: 2em 0;
-}
-
-section h2 {
-    font-size: 1.5em;
-    gap: 2rem;
-}
-
-section a {
-    text-decoration: underline;
-    color: #000;
-    font-weight: 900;
-}
-
-article {
+header {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
 }
 
-article img {
-    width: 25%; 
-    height: 20em; 
-
-
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    margin-right: 0.5rem;
+}
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.login {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.article {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5em;
 }
 
-article .mainn {
-    width: 65%; 
+.article h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+
+.content {
+    display: block;
+}
+
+.content .text {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-right: 1rem;
-
-    padding: 0;
+    justify-content: space-evenly;
 }
 
-p {
-    display:inline;
+.image {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+.comments {
+    color: #4a4a4a;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content .text {
+        width: 48%;
+    }
+    .image {
+        width: 48%;
+    }
 }

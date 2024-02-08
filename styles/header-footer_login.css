@@ -2,10 +2,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #fafbff;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    height: 75px;
+    margin-bottom: 50px;
 }
 
 #headerLogo {
@@ -20,41 +20,43 @@ header {
     justify-content: space-between;
     width: auto;
     gap: 1em;
-    
 }
 
 a#active {
     text-decoration: none;
-    color: #735319;
+    color: #F0D054;
     font-weight: bolder;
     cursor: default;
 }
 
-a.inactive {
+a.inactive h3{
+    color: #288085;
+    font-weight: normal;
+}
+
+a.inactive{
     text-decoration: none;
-    color: #216016;
-    /* font-weight: bolder; */
 }
 
 footer {
     position: absolute;
     width: 100%;
-    bottom: 0;
 
     height: 75px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background-color: #fafbff;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+    bottom: 0;
     margin-top: auto;
 }
 
-footer .footerLink {
-    text-decoration: none;
+footer a {
+    font-size: 1em;
+    font-weight: bold;
     color: black;
-    font-weight: bolder;
-    cursor: pointer;
+    text-decoration: none;
 }

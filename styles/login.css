@@ -25,7 +25,9 @@ main {
 }
 
 form {
-    width: 300px;
+    min-width: 300px;
+    width: 50%;
+    max-width: 400px;
     margin: 0 auto;
     height: auto;
     border-radius: 25px;
@@ -33,6 +35,25 @@ form {
     padding: 20px;
     padding-bottom: 10px;
     background-color: #fff;
+}
+
+label {
+    font-size: 1.25em;
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.25em;
 }
 
 .form-group {

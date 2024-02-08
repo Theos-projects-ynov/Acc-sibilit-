@@ -1,48 +1,103 @@
-* {
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif
 }
 
-body {
-    min-height: 100vh;
-    width: 100vw;
-
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#logoContainer {
-    display: flex;
-    align-items: center;
-}
-
-#headerLogo {
-    width: 75px;
-    height: auto;
-    margin: 25px;
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 main {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    margin-top: auto;
+#titlePage {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.article {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5em;
+}
+
+.article p {
+    margin: 0 0 3em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table caption {
+    font-size: 1.25em;
+    text-decoration: underline;
+    margin: 0 0 .75em;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+tbody th,tbody td {
+    text-align: center;
+    padding: 8px;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+tfoot{
+    background-color: #e2e2e2;
+    color: #333;
+    padding: 8px;
+}
+
+tfoot td,thead th{
+    padding: 8px;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 320px) {
+    #titlePage {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: 2em;
+    }
+
+    #titlePage h1,h2{
+        margin: 0.5em 0 0;
+    }
+    
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
 }
