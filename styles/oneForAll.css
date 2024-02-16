@@ -46,7 +46,7 @@ a.inactive h3 {
 }
 
 footer {
-    position: absolute;
+position: absolute;
     width: calc(100% - 2rem);
 
     height: 75px;
@@ -60,12 +60,29 @@ footer {
     margin-top: auto;
 }
 
-footer a {
+footer nav menu {
+    display: flex;
+}
+
+footer nav menu li {
+    list-style: none;
+    margin: 0 1em;
+}
+
+footer nav menu li a {
     font-size: 1em;
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
+
+footer nav menu li {
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
 
 /* --------------------------------------------- */
 
@@ -147,10 +164,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .logo {
