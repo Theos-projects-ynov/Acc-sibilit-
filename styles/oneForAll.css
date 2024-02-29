@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
 
 header {
     display: flex;

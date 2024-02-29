@@ -23,19 +23,25 @@
             <img src="img/logoLow.webp" alt="Logo de Eateaze"
                     id="headerLogo">
         </a>
-    
-        <nav id="header-nav">
-            <a href="../login.html"  class="inactive">
-                Connexion
-            </a>
-            <a href="../articles.html"
-                class="inactive">
-                article
-            </a>
+
+        <nav id="header-nav" aria-label="Navigation Principal">
+            <ul>
+                <li>
+                    <a href="../blog.html" title="Accéder aux articles" class="inactive">
+                        Connexion
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/articles.html"
+                       class="inactive">
+                        article
+                    </a></li>
+            </ul>
         </nav>
+
     </header>
 
-<div class="container">
+<main class="container">
 
     <h1>Accueil</h1>
 
@@ -229,7 +235,7 @@
       <div class="comments">X commentaires</div>
   </article>
 </a>
-</div>
+</main>
 
 <footer id="footerLogin">
     <nav>
